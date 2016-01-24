@@ -1,0 +1,484 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+#open {
+    width: 60px;
+    height: 45px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+ 
+#open input[type="checkbox"]:focus {
+    outline: 0;
+}
+
+#open input[type="checkbox"]:checked ~ #links {
+    transform: translateX(-100%);
+}
+
+#open hr {
+    width: 25px;
+    background-color: white;
+    border-color: white;
+    position: fixed;
+    z-index: 4;
+}
+
+#nav {
+    width: 100%;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+#nav a {
+ background: #444;
+ color: #fff;
+ margin-right: 30px;
+ width: 30px;
+ height: 30px;
+ float: left;
+ text-decoration: none;
+}
+ 
+#nav ul {
+    position: absolute;
+    margin-top: 10px;
+}
+
+#nav ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+#line1 {
+    margin-top: 15px;
+    margin-left: 17px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#line2 {
+    margin-top: 27px;
+    margin-left: 17px;
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+    background-color: #5a5a5a;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60px;
+    height: 45px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    z-index: 4;
+}
+
+input[type="checkbox"]:checked ~ #line1 {
+    transform: translateY(5.5px) rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ #line2 {
+    transform: translateY(-5.5px) rotate(-45deg);
+}
+
+#links {
+    position: fixed;
+    background-color: #5a5a5a;
+    width: 100%;
+    height: 45px;
+    left: 100%;
+    top: 0px;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link1, .link2, .link3, .link4{
+    float: left;
+    cursor: pointer;
+    color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.link1:hover, .link2:hover, .link3:hover, .link4:hover {
+    color: red;
+}
+
+.panel {
+    height: 100%;
+    width: 100%;
+		z-index: 1;
+}
+
+.header {
+    font-family: Helvetica Neue;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    margin: 0px;
+}
+
+.sub {
+    font-family: Helvetica Neue;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    line-height: 250px;
+    top: 0%;
+    text-align: center;
+    margin: 0px;
+}
+
+.subsub{
+    font-family: Helvetica Neue;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#education {
+    background-color: rgba(77, 122, 136, 0.7);
+}
+
+#projects {
+    background-color: rgba(84, 97, 136, 0.7);
+    height: 160%;
+    width: 100%;
+		z-index: 1;
+}
+
+#home {
+    background-color: rgba(67, 122, 129, 0.7);
+}
+
+#backImg1 {
+		position: fixed;
+		background-image: url("keyboard.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		z-index: -2;
+}
+
+#backImg2 {
+		position: fixed;
+		background-image: url("moon.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		z-index: -2;
+}
+
+#backSolid1 {
+		position: absolute;
+		background-color: white;
+		opacity: 1;
+		height: 100%;
+		width: 100%;
+		top: 100%;
+		z-index: -1;
+}
+
+#backSolid2 {
+		position: absolute;
+		background-color: white;
+		opacity: 1;
+		height: 100%;
+		width: 100%;
+		top: 360%;
+		z-index: -1;
+}
+
+#skills {
+    background-color: rgba(74, 146, 87, 0.7);
+}
+
+.tab {
+		z-index: 1;
+		position: relative;
+    background-color: #5a5a5a;
+		display: inline-block;
+		padding: 10px;
+}
+
+#programming {
+		position: absolute;
+		width: 69%;
+		top: 138%;
+		z-index: 1;
+  	left: 50%;
+		transform: translate(-50%, 0);
+		opacity: 0;
+}
+
+#webdev {
+		position: absolute;
+		top: 158%;
+		z-index: 1;
+  	left: 50%;
+		transform: translate(-50%, 0);
+		opacity: 0;
+}
+
+#os {
+		position: absolute;
+		top: 180%;
+		z-index: 1;
+  	left: 50%;
+		transform: translate(-50%, 0);
+		opacity: 0;
+}
+
+#subprog {
+		position: absolute;
+		top: 130%;
+  	left: 50%;
+		transform: translate(-50%, 0);
+}
+
+#subweb {
+		position: absolute;
+		top: 150%;
+  	left: 50%;
+		transform: translate(-50%, 0);
+}
+
+#subos {
+		position: absolute;
+		top: 170%;
+  	left: 50%;
+		transform: translate(-50%, 0);
+}
+
+#programming .pill {
+		background-color: rgba(67, 122, 129, 0.7);
+}
+
+#webdev .pill{
+    background-color: rgba(84, 97, 136, 0.7);
+}
+
+#os .pill {
+    background-color: rgba(77, 122, 136, 0.7);
+}
+
+.pill {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 15px;
+		padding-right: 15px;
+    color: white;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-weight: lighter;
+		display: inline-block;
+		float: left;
+}
+
+#projects .pill {
+		position: absolute;
+		background-color: rgba(67, 122, 129, 0.7);
+}
+
+#cpp1 {
+		top: 195px;
+		left: 130px;	
+}
+
+#cpp2 {
+		top: 215px;
+		left: 130px;
+}
+
+#cpp3 {
+		top: 215px;
+		left: 130px;
+}
+
+#firstp {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 15px;
+		padding-right: 15px;
+    color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+		display: inline-block;
+		float: left;
+		position: absolute;
+    background-color: rgba(84, 97, 136, 0.7);
+		top: 175px;
+		left: 0%;
+}
+
+#secondp {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 15px;
+		padding-right: 15px;
+    color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+		display: inline-block;
+		float: left;
+		position: absolute;
+    background-color: rgba(84, 97, 136, 0.7);
+		top: 175px;
+		left: 35%;
+}
+
+#thirdp {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 15px;
+		padding-right: 15px;
+    color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+		display: inline-block;
+		float: left;
+		position: absolute;
+    background-color: rgba(84, 97, 136, 0.7);
+		top: 175px;
+		left: 66%;
+}
+
+#home h2 {
+		position: relative;
+	  color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+		text-align: center;
+    top: 30%;
+}
+
+.screenshot {
+    height: 300px;
+    width: 450px;
+		opacity: 1;
+		filter: brightness(50%);
+		-webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+		background-color: black;
+}
+
+.extLink {
+		position: relative;
+		height: 300px;
+		width: 450px;
+}
+
+#columns .tint {
+    background-color: #5a5a5a;
+}
+
+.notes {
+		position: absolute;
+		margin-top: 6%;
+		margin-left: 10%;
+	  color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: lighter;
+		opacity: 0;
+		-webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.extLink:hover .screenshot {
+		opacity: 0;
+}
+
+.extLink:hover .notes {
+		opacity: 1;
+}
+
+#columns {
+		position: relative;
+		top: -60px;
+		margin: auto;
+    border-collapse: separate;
+		border-spacing: 80px 40px;
+		z-index: 1;
+}
+
+#columns td {
+		width: 20px;
+}
+
+#education table{
+	  width: 80%;
+    margin: auto;
+		margin-top: -80px;
+		border-spacing: 40px 15px;
+}
+
+#education table .description {
+    color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    vertical-align: top;
+		text-align: left;
+		vertical-align: top;
+}
+
+#education table .title {
+    color: white;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+		text-align: left;
+		vertical-align: top;
+}
+
+#education table .date {
+    color: white;
+    font-family: Helvetica Neue;
+		letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: lighter;
+    text-decoration: none;
+    vertical-align: top;
+		text-align: left;
+}
