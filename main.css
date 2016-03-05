@@ -41,7 +41,6 @@ html, body {
     right: 0;
     top: 0;
     position: fixed;
-		min-height: 700px;
 }
 
 #nav a {
@@ -130,6 +129,7 @@ input[type="checkbox"]:checked ~ #line2 {
 		z-index: 1;
 }
 
+
 .header {
     font-family: Helvetica Neue;
     font-size: 70px;
@@ -204,19 +204,7 @@ input[type="checkbox"]:checked ~ #line2 {
 		z-index: -2;
 }
 
-#back1 {
-		position: absolute;
-		background-color: black;
-		opacity: 0;
-		height: 100%;
-		width: 100%;
-		min-width: 1200px;
-		min-height: 700px;
-		top: 0%;
-		z-index: -1;
-}
-
-#back2 {
+#backSolid1 {
 		position: absolute;
 		background-color: white;
 		opacity: 1;
@@ -228,19 +216,7 @@ input[type="checkbox"]:checked ~ #line2 {
 		z-index: -1;
 }
 
-#back3 {
-		position: absolute;
-		background-color: black;
-		opacity: 0;
-		height: 160%;
-		width: 100%;
-		min-width: 1200px;
-		min-height: 1120px;
-		top: 200%;
-		z-index: -1;
-}
-
-#back4 {
+#backSolid2 {
 		position: absolute;
 		background-color: white;
 		opacity: 1;
@@ -257,6 +233,7 @@ input[type="checkbox"]:checked ~ #line2 {
 }
 
 #skillList {
+		
 		position: relative;
 		top: -5%;
 }
@@ -271,7 +248,7 @@ input[type="checkbox"]:checked ~ #line2 {
     background-color: #5a5a5a;
 		display: inline-block;
 		left: 50%;
-    -webkit-transform:translateX(-50%);
+    transform:translate(-50%, 0);
 		padding: 10px;
 }
 
