@@ -56,6 +56,7 @@ html, body {
 #nav ul {
     position: absolute;
     margin-top: 10px;
+ 		list-style-type: none;
 }
 
 #nav ul li {
@@ -78,6 +79,8 @@ html, body {
 input[type="checkbox"] {
     background-color: #5a5a5a;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
     appearance: none;
     width: 60px;
     height: 45px;
@@ -393,6 +396,8 @@ input[type="checkbox"]:checked ~ #line2 {
 		opacity: 1;
 		filter: brightness(50%);
 		-webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
     transition: opacity 0.5s;
 		background-color: black;
 }
@@ -418,6 +423,8 @@ input[type="checkbox"]:checked ~ #line2 {
     font-weight: lighter;
 		opacity: 0;
 		-webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
 
