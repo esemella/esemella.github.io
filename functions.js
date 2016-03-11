@@ -26,7 +26,7 @@ $("document").ready(function() {
         } else {
             $('#backImg2').css({
                 position: 'fixed',
-                top: 0
+								top: 0
             });
         }
 				if (($(window).scrollTop() >= h / 2) &&
@@ -35,12 +35,12 @@ $("document").ready(function() {
 								opacity: '1'
 						}, 1000);
 				}
-				if ($(window).scrollTop() >= h  * 3 / 4) {
+				if ($(window).scrollTop() >= h * 3 / 5) {
 						$('#webdev').animate({
 								opacity: '1'
 						}, 1000);
 				}
-				if ($(window).scrollTop() >= h) {
+				if ($(window).scrollTop() >= h * 4 / 5) {
 						$('#os').animate({
 								opacity: '1'
 						}, 1000);
