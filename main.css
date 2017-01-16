@@ -1,5 +1,3 @@
-//testing comments
-
 html, body {
 	min-width: 1200px;
   height: 100%;
@@ -550,4 +548,13 @@ input[type="checkbox"]:checked ~ #line2 {
     text-decoration: none;
     vertical-align: top;
 		text-align: left;
+}
+
+@media (max-height:700px) {
+	#backImg1 {
+		display: none;
+	}
+	#backImg2 {
+		display: none;
+	}
 }

@@ -1,6 +1,16 @@
 var h=$(window).height();
 
 $("document").ready(function() {
+	var height = $(window).height();
+	var width = $(window).width();
+
+	$(window).resize(function() {
+		if (width != $(window).width() || height != $(window).height) {
+			location.reload();
+			return;
+		}
+	});
+
     $('.link1').click(function(){
         $('html, body').animate({
             scrollTop: $("#home").offset().top}, 1000);
